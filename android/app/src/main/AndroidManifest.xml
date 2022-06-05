@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.abstract2dot0">
+  package="com.mixmaker.abstract2dot0">
 
     <uses-permission android:name="android.permission.INTERNET" />
 

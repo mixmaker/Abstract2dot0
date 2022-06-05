@@ -4,16 +4,20 @@ import React from 'react';
 const About = () => {
   return (
     <View style={{ padding: 15 }}>
-      <Text style={{ fontSize: 16 }}>
-        {"  "}This app is made by Shoumik Kumbhakar, a passionate mobile and fullstack
-        web developer from India.
+      <Text style={{ fontSize: 20, color: '#fff', marginBottom: 5 }}>
+        Developer information
       </Text>
-      <Text style={{ fontSize: 20, color: '#fff', marginTop: 20 }}>
+      <Text style={{ fontSize: 16 }}>
+        {'  '}This app is made by Shoumik Kumbhakar, a passionate mobile and
+        fullstack web developer from India.
+      </Text>
+      <Text
+        style={{ fontSize: 20, color: '#fff', marginTop: 20, marginBottom: 5 }}>
         Copyright information
       </Text>
       <Text style={{ fontSize: 16 }}>
         {'  '}The wallpapers in this app are created by Hampus Olisson. I do not
-        own the copywright of this wallpapers, nor I distribute these. This app
+        own the copyright of this wallpapers, nor I distribute these. This app
         is a work of my leisure time and is solely meant for educational
         purposes.
       </Text>

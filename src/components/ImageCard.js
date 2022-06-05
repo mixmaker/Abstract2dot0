@@ -37,7 +37,9 @@ const ImageCard = ({ item, RIGHT_OFFSET, MARGIN_RIGHT, navigation }) => {
               backgroundColor: 'rgba(0,0,0,0.4)',
             }}>
             <Image
-              source={{ uri: item.icon_image_url }}
+              source={{
+                uri: item.icon_image_url.replace('http://', 'https://'),
+              }}
               style={{ height: 80, width: 80, marginBottom: 10 }}
             />
             <Text style={{ fontSize: 18, fontFamily: 'Segoe UI Bold' }}>
@@ -56,7 +58,7 @@ const ImageCard = ({ item, RIGHT_OFFSET, MARGIN_RIGHT, navigation }) => {
             </Text>
           </View>
           <Image
-            source={{ uri: item.cover_image_url }}
+            source={{ uri: item.cover_image_url.replace('http://', 'https://') }}
             style={{
               height: Dimensions.get('window').height - 180,
               width: Dimensions.get('window').width - RIGHT_OFFSET,

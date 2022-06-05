@@ -1,4 +1,4 @@
-package com.abstract2dot0;
+package com.mixmaker.abstract2dot0;
 import android.os.Bundle;
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;

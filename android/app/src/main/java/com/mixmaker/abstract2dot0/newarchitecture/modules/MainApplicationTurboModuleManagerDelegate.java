@@ -1,4 +1,4 @@
-package com.abstract2dot0.newarchitecture.modules;
+package com.mixmaker.abstract2dot0.newarchitecture.modules;
 
 import com.facebook.jni.HybridData;
 import com.facebook.react.ReactPackage;

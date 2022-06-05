@@ -33,12 +33,10 @@ const WallsList = ({ route, navigation }) => {
   return (
     <View style={{}}>
       <FlatList
-        contentContainerStyle={{
-          paddingBottom: 20,
-        }}
-        style={{}}
+        contentContainerStyle={{ paddingBottom: 20 }}
+        decelerationRate='normal'
         ListHeaderComponent={() => (
-          <View style={{}}>
+          <View>
             <View
               style={{
                 ...StyleSheet.absoluteFillObject,
@@ -53,7 +51,7 @@ const WallsList = ({ route, navigation }) => {
             </View>
             <Image
               blurRadius={5}
-              source={{ uri: cover }}
+              source={{ uri: cover.replace('http://', 'https://') }}
               style={{
                 width: Dimensions.get('window').width,
                 height: 100,
@@ -76,7 +74,6 @@ const WallsList = ({ route, navigation }) => {
           <View
             style={{
               margin: ITEM_PADDING + CONTAINER_PADDING / 2,
-              borderRadius: 6,
               overflow: 'hidden',
             }}>
             <Pressable
@@ -84,8 +81,9 @@ const WallsList = ({ route, navigation }) => {
                 navigation.navigate('Wallpaper', { item, name: item.name })
               }>
               <Image
-                source={{ uri: item.url_thumb }}
+                source={{ uri: item.url_thumb.replace('http://', 'https://') }}
                 style={{
+                  borderRadius: 6,
                   width:
                     Dimensions.get('window').width / 2 -
                     ITEM_PADDING * 2 -

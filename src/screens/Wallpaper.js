@@ -133,7 +133,7 @@ const Wallpaper = ({ route, navigation }) => {
             </Text>
           </View>
           <Image
-            source={{ uri: wallpaper.url_res3 }}
+            source={{ uri: wallpaper.url_res3.replace('http://', 'https://') }}
             onLoadEnd={() => setLoading(false)}
             style={{
               height: Dimensions.get('screen').height,

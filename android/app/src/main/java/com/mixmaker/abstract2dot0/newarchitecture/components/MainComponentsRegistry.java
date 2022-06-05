@@ -1,4 +1,4 @@
-package com.abstract2dot0.newarchitecture.components;
+package com.mixmaker.abstract2dot0.newarchitecture.components;
 
 import com.facebook.jni.HybridData;
 import com.facebook.proguard.annotations.DoNotStrip;
