@@ -4,7 +4,15 @@ import React from 'react';
 const ImageCard = ({ item, RIGHT_OFFSET, MARGIN_RIGHT, navigation }) => {
   return (
     <Pressable
-      onPress={() => navigation.navigate('WallsList', { name: item.name })}>
+      onPress={() =>
+        navigation.navigate('WallsList', {
+          name: item.name,
+          description: item.description,
+          cover: item.cover_image_url,
+          id: item.id,
+          total: item.no_of_wallpapers,
+        })
+      }>
       <View style={{ marginRight: MARGIN_RIGHT, marginTop: 20 }}>
         <Text
           style={{ fontSize: 32, marginVertical: 15, fontFamily: 'Segoe UI' }}>

@@ -21,7 +21,7 @@ const Home = ({ navigation }) => {
       showsHorizontalScrollIndicator={false}
       contentContainerStyle={{
         paddingLeft: 25,
-        paddingRight: RIGHT_OFFSET - MARGIN_RIGHT,
+        paddingRight: RIGHT_OFFSET - MARGIN_RIGHT - 25,
       }}
       decelerationRate={100}
       snapToInterval={
