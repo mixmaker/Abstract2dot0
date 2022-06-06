@@ -2110,6 +2110,7 @@ __metadata:
     react-native-bars: ^1.1.4
     react-native-device-wallpaper: "https://github.com/juanamd/react-native-device-wallpaper.git"
     react-native-gesture-handler: ^2.4.2
+    react-native-linear-gradient: ^2.5.6
     react-native-safe-area-context: ^4.2.5
     react-native-screens: ^3.13.1
     react-test-renderer: 17.0.2
@@ -7876,6 +7877,15 @@ __metadata:
   version: 0.0.6
   resolution: "react-native-gradle-plugin@npm:0.0.6"
   checksum: 185ad348931ef4f58065b50bbf80558af668b1ef11c31067aab7f1cd85b18809a62fcf0b7a18444726dacd098042771a570c0ac76bb8976c3ccbe7c86cff0e11
+  languageName: node
+  linkType: hard
+
+"react-native-linear-gradient@npm:^2.5.6":
+  version: 2.5.6
+  resolution: "react-native-linear-gradient@npm:2.5.6"
+  peerDependencies:
+    react-native: ">=0.55"
+  checksum: 7848eff1dfdb219123303de1b62daa6ba7e669700506985b770cff542052fb70815627fb42e5c189f5a6c9f17c740d0067c0d917cd2fab883f1b860419a2496d
   languageName: node
   linkType: hard
 

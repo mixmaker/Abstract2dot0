@@ -13,9 +13,22 @@ const ImageCard = ({ item, RIGHT_OFFSET, MARGIN_RIGHT, navigation }) => {
           total: item.no_of_wallpapers,
         })
       }>
-      <View style={{ marginRight: MARGIN_RIGHT, marginTop: 20 }}>
+      <View
+        style={{
+          marginRight: MARGIN_RIGHT,
+          marginTop: 20,
+          shadowColor: '#000',
+          shadowOffset: {
+            width: 0,
+            height: 3,
+          },
+          shadowOpacity: 0.29,
+          shadowRadius: 4.65,
+
+          elevation: 7,
+        }}>
         <Text
-          style={{ fontSize: 32, marginVertical: 15, fontFamily: 'Segoe UI' }}>
+          style={{ fontSize: 32, marginVertical: 25, fontFamily: 'Segoe UI' }}>
           {item.name}
         </Text>
         <View
@@ -34,7 +47,7 @@ const ImageCard = ({ item, RIGHT_OFFSET, MARGIN_RIGHT, navigation }) => {
               zIndex: 5,
               justifyContent: 'center',
               alignItems: 'center',
-              backgroundColor: 'rgba(0,0,0,0.4)',
+              backgroundColor: 'rgba(0,0,0,0.2)',
             }}>
             <Image
               source={{
@@ -58,9 +71,11 @@ const ImageCard = ({ item, RIGHT_OFFSET, MARGIN_RIGHT, navigation }) => {
             </Text>
           </View>
           <Image
-            source={{ uri: item.cover_image_url.replace('http://', 'https://') }}
+            source={{
+              uri: item.cover_image_url.replace('http://', 'https://'),
+            }}
             style={{
-              height: Dimensions.get('window').height - 180,
+              height: 600,
               width: Dimensions.get('window').width - RIGHT_OFFSET,
             }}
           />

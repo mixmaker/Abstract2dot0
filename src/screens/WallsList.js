@@ -31,10 +31,9 @@ const WallsList = ({ route, navigation }) => {
   const ITEM_PADDING = 15;
 
   return (
-    <View style={{}}>
+    <View>
       <FlatList
         contentContainerStyle={{ paddingBottom: 20 }}
-        decelerationRate='normal'
         ListHeaderComponent={() => (
           <View>
             <View

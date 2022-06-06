@@ -1,6 +1,5 @@
 import { View, Image, Pressable } from 'react-native';
 import React from 'react';
-import { SystemBars } from 'react-native-bars';
 import {
   CardStyleInterpolators,
   createStackNavigator,
@@ -21,12 +20,19 @@ const App = () => {
           component={Home}
           options={({ navigation }) => ({
             headerTitle: 'Abstract',
+            headerTransparent: 'true',
+            headerTitleStyle: {
+              fontSize: 22,
+              fontFamily: 'Segoe UI',
+              letterSpacing: 0.5,
+              color: '#fff',
+            },
             headerRight: () => (
               <Pressable onPress={() => navigation.navigate('About')}>
                 <Image
                   style={{ height: 22, width: 22, marginRight: 15 }}
                   source={{
-                    uri: 'https://www.iconsdb.com/icons/preview/color/C9C9C9/info-2-xxl.png',
+                    uri: 'https://www.iconsdb.com/icons/preview/white/info-2-xxl.png',
                   }}
                 />
               </Pressable>
@@ -53,15 +59,9 @@ const App = () => {
         <Stack.Screen
           name="Wallpaper"
           component={Wallpaper}
-          options={({ route }) => ({
-            headerShown: false,
-            headerTitle: route.params.name,
-            headerTransparent: true,
-            // headerStyle: { backgroundColor: '#fbfbfb29' },
-          })}
+          options={{ headerShown: false }}
         />
       </Stack.Navigator>
-      <SystemBars animated={true} barStyle="light-content" />
     </View>
   );
 };

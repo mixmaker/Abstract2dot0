@@ -28,13 +28,19 @@ const Wallpaper = ({ route, navigation }) => {
     ToastAndroid.show('Please wait...', ToastAndroid.LONG);
     var res;
     if (where === 'Home') {
-      res = await DeviceWallpaper.setWallPaper(wallpaper.url_res3);
+      res = await DeviceWallpaper.setWallPaper(
+        wallpaper.url_res3.replace('http://', 'https://'),
+      );
     }
     if (where === 'Lock') {
-      res = await DeviceWallpaper.setLockScreen(wallpaper.url_res3);
+      res = await DeviceWallpaper.setLockScreen(
+        wallpaper.url_res3.replace('http://', 'https://'),
+      );
     }
     if (where === 'Both') {
-      res = await DeviceWallpaper.setBoth(wallpaper.url_res3);
+      res = await DeviceWallpaper.setBoth(
+        wallpaper.url_res3.replace('http://', 'https://'),
+      );
     }
     ToastAndroid.show(
       res ? 'Successfully set wallpaper' : 'Some error occurred',
@@ -57,7 +63,6 @@ const Wallpaper = ({ route, navigation }) => {
             justifyContent: 'flex-end',
             alignItems: 'center',
             backgroundColor: 'rgba(0,0,0,0.4)',
-            marginTop: 98 - StatusBar.currentHeight,
           }}>
           <Pressable
             style={{

@@ -17,6 +17,7 @@
     "react-native-bars": "^1.1.4",
     "react-native-device-wallpaper": "https://github.com/juanamd/react-native-device-wallpaper.git",
     "react-native-gesture-handler": "^2.4.2",
+    "react-native-linear-gradient": "^2.5.6",
     "react-native-safe-area-context": "^4.2.5",
     "react-native-screens": "^3.13.1"
   },
